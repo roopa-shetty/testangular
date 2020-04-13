@@ -25,7 +25,7 @@ jobs:
         HOST: 54.172.13.190
         USERNAME: gitaction
         PORT: 22
-        PASSWORD: INDian
+        KEY: testkir
       with:
         source: "./dist/testangular/"
         target: "/home/gitaction/"
