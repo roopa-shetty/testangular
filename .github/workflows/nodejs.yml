@@ -6,6 +6,15 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v1
+    - name: Node $
+       uses: actions/setup-node@v1
+      with:
+       node-version: $
+      - name: npm install and npm run build
+        run: |
+          npm ci
+          npm run build:ci
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
