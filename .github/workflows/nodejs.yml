@@ -26,10 +26,10 @@ jobs:
         USERNAME: gitaction
         PORT: 22
         KEY: ${{ secrets.testkir }}
-#      with:
-#        source: "./dist/testangular/"
-#        target: "/home/gitaction/"
-#        strip_components: 3 # this is important
+      with:
+        source: "./dist/testangular/"
+        target: "/home/gitaction/"
+        strip_components: 3 # this is important
 #      with:
 #        host: 54.172.13.190
 #        username: gitaction
