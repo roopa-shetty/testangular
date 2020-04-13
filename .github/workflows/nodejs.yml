@@ -19,6 +19,7 @@ jobs:
     - run: npm install
     - run: npm install -g @angular/cli > /dev/null
     - run: ng build
+    - run: ls
     - name: Copy files via ssh
       uses: appleboy/ssh-action@master
       env:
@@ -28,7 +29,7 @@ jobs:
         KEY: ${{ secrets.testkir }}
       with:
         source: "./dist/testangular/"
-        target: "/home/gitaction/"
+        target: "/home/gitaction/test.com/"
         strip_components: 3 # this is important
 #      with:
 #        host: 54.172.13.190
