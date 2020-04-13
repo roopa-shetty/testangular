@@ -1,31 +1,28 @@
-# Angular CLI with Github Actions
+# Angular and TypeScript Hello World Project
 
-[![build status](https://github.com/coryrylan/angular-github-actions/workflows/Build/badge.svg)](https://github.com/coryrylan/angular-github-actions/actions)
+The Hello World project is an Angular 2+ starter project that has the npm modules, 
+configuration, scripts and folders and routing in place to make getting started 
+with an Angular project easy!
 
-[Tutorial Blog Post](https://coryrylan.com/blog/building-angular-cli-projects-with-github-actions)
+Here's what is in the project:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-rc.2.
+* Angular scripts and TypeScript configuration are ready to go
+* A simple app component 
+* Bootstrap for CSS
 
-## Development server
+This is a very simple "Hello World" project to help get you started.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+If you're using VS Code, install my [Angular code snippets](https://blog.codewithdan.com/2017/04/01/angular-2-typescript-and-html-snippets-for-vs-code/) 
+to simplify the process of writing Angular code. The code snippets make it easy
+to build Angular components, services, pipes, directives and more.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Running the Application
 
-## Build
+1. Install the Angular CLI
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    `npm install -g @angular/cli`
 
-## Running unit tests
+1. Run `npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Run `ng serve -o`
