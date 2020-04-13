@@ -23,12 +23,11 @@ jobs:
     - run: pwd
     - name: Copy files via ssh
       uses: appleboy/ssh-action@master
-      env:
+      with:
         HOST: 54.172.13.190
         USERNAME: gitaction
         PORT: 22
-        KEY: ${{ secrets.testkir }}
-      with:  
+        KEY: ${{ secrets.testkir }} 
         source: "/home/runner/work/testangular/testangular/dist/"
         target: "/home/gitaction/"
         strip_components: 3 # this is important
