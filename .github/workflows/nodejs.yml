@@ -29,7 +29,7 @@ jobs:
         PORT: 22
         KEY: ${{ secrets.testkir }}
       with:
-        source: "/home/runner/work/testangular/testangular/dist/"
+        source: "./dist/testangular/"
         target: "/home/gitaction/"  
         strip_components: 3 # this is important
 #      with:
