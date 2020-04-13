@@ -21,7 +21,6 @@ jobs:
     - run: ng build
     - name: Copy files via ssh
       uses: appleboy/ssh-action@master
-          uses: appleboy/scp-action@master
       env:
         HOST: 54.172.13.190
         USERNAME: gitaction
