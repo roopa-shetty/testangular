@@ -19,11 +19,21 @@ jobs:
     - run: npm install
     - run: npm install -g @angular/cli > /dev/null
     - run: ng build
-    - name: executing remote ssh commands using password
+    - name: Copy files via ssh
       uses: appleboy/ssh-action@master
-      with:
-        host: 54.172.13.190
-        username: gitaction
+          uses: appleboy/scp-action@master
+      env:
+        HOST: 54.172.13.190
+        USERNAME: gitaction
+        PORT: 22
         password: INDian
-        port: 22
-        script: /bin/bash testroopa.sh
+      with:
+        source: "./dist/testangular/"
+        target: "/home/gitaction/"
+        strip_components: 3 # this is important
+#      with:
+#        host: 54.172.13.190
+#        username: gitaction
+#        password: INDian
+#        port: 22
+#        script: /bin/bash testroopa.sh
