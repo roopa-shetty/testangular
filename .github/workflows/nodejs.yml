@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Node $
-       uses: actions/setup-node@v1
+       uses: actions/setup-node@8
       with:
        node-version: $
       - name: npm install and npm run build
