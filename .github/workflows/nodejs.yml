@@ -30,7 +30,7 @@ jobs:
         KEY: ${{ secrets.testkir }} 
         source: "/home/runner/work/testangular/testangular/dist/"
         target: "/home/gitaction/"
-    - run: toch rrrrooopakirhan  
+    - run: touch rrrrooopakirhan  
         strip_components: 3 # this is important
 #      with:
 #        host: 54.172.13.190
